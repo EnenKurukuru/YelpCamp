@@ -1,4 +1,4 @@
-const BaseJoi = require('Joi');
+const BaseJoi = require('joi');
 const { model } = require('mongoose');
 const sanitizeHtml = require('sanitize-html')
 
