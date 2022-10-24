@@ -165,8 +165,9 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render('error',{err});
 })
 
-app.listen(3000, () =>{
-    console.log('Connected to Port 3000')
+const port = process.env.PORT || 3000
+app.listen(port, () =>{
+    console.log(`Connected to Port ${port}`)
 })
 
 // 6310c01c0cfac8fd92e5401a
